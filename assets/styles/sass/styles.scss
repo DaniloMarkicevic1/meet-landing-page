@@ -1,0 +1,27 @@
+@use "./fontStyles/fontsAndColors";
+@use "./components/components";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  .container {
+    width:100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.circle {
+  width: 56px;
+  height: 56px;
+  border: 1px solid black;
+  border-radius: 50%;
+  align-items: center;
+}

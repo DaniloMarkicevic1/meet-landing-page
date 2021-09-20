@@ -1,0 +1,61 @@
+body {
+  .container {
+    .header {
+      .avatars {
+        display: grid;
+        column-gap: 16.16px;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        img {
+          width: 55.56px;
+          height: 55.54px;
+          border-radius: 50%;
+        }
+        .grid-left {
+          display: grid;
+          column-gap: 16.16px;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-areas: "left-items" "right-items" "middle-items";
+          .left-items {
+            grid-area: "left-items";
+            padding-top: 27px;
+          }
+          .middle-items {
+            grid-area: "middle-items";
+          }
+          .right-items {
+            grid-area: "right-items";
+            margin-top: 27px;
+          }
+        }
+        .grid-right {
+          display: grid;
+          column-gap: 16.16px;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-areas: "left-items" "right-items" "middle-items";
+          .left-items {
+            grid-area: "left-items";
+          }
+          .middle-items {
+            grid-area: "middle-items";
+            padding-top: 27px;
+          }
+          .right-items {
+            grid-area: "right-items";
+          }
+        }
+        // Spacing Between avatars
+        .grid-left,
+        .grid-right {
+          .left-items,
+          .middle-items,
+          .right-items {
+            img:nth-child(1) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
