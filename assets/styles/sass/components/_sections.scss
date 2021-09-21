@@ -13,7 +13,7 @@ body {
       width: 100%;
       padding-top: 48px;
       h1 {
-        padding: 0 46px;
+        padding: 0 24px;
       }
       p {
         padding: 24px 24px 0 24px;
@@ -23,6 +23,7 @@ body {
       }
       .btn-padding {
         padding-top: 16px;
+        padding-bottom: 64px;
       }
     }
     // Middle section
@@ -31,22 +32,9 @@ body {
       .content-images {
         display: grid;
         column-gap: 24px;
-        row-gap: 25px;
+        row-gap: 15px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "img1" "img2" "img3" "img4";
-        .content-img1 {
-          grid-area: "img1";
-        }
-        .content-img2 {
-          grid-area: "img2";
-        }
-        .content-img3 {
-          grid-area: "img3";
-        }
-        .content-img4 {
-          grid-area: "img4";
-        }
         .content-img1,
         .content-img2,
         .content-img3,
@@ -57,22 +45,41 @@ body {
           }
         }
       }
+      h2 {
+        padding-top: 64px;
+      }
       h1 {
-        padding-top: 24px;
+        padding: 16px 161px 0 161px;
       }
       p {
-        padding-top: 32px;
+        padding: 32px 98px 80px 98px;
       }
     }
+
+    .footer-content::before {
+      content: "";
+      background-image: url("../../images/mobile/image-footer.jpg");
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      z-index: -1;
+    }
     .footer-content {
-      padding: 64px 24px 0 24px;
+      width:100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+      background-color: rgba(77, 150, 169, 0.86);
       h1 {
         padding-top: 92px;
       }
       p {
-        padding-top: 24px;
+        padding: 24px 24px 0 24px;
       }
-      div {
+      .footer-btn {
         padding-top: 32px;
         padding-bottom: 72px;
       }
