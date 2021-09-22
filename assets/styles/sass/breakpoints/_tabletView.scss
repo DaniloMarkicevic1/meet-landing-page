@@ -16,6 +16,8 @@
         padding-top: 72px;
         h1 {
           padding: 0 214px;
+          font-size: 48px;
+          line-height: 48px;
         }
         p {
           padding: 24px 20% 0 20%;
@@ -34,30 +36,39 @@
       }
       // Middle section
       .middle-content {
-        padding: 67px 39px 0 39px;
+        padding-top: 67px;
         .content-images {
+          display: flex;
+          flex-direction: row;
+          padding: 0 40px;
           column-gap: 11px;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: 1fr;
           .content-img1,
           .content-img2,
           .content-img3,
           .content-img4 {
             img {
+              object-fit: cover;
               width: 100%;
+              min-height: 100%;
               border-radius: 8px;
             }
           }
         }
         h2 {
-          padding-top: 48px;
+          padding: 48px 149px 0 149px;
         }
         h1 {
-          padding-top: 24px;
+          padding: 16px 65px 0 63px;
+          font-size: 40px;
+          line-height: 44px;
         }
         p {
+          padding: 0;
           padding-top: 32px;
-          padding-bottom: 64px;
+          padding-bottom: 80px;
+        }
+        .middle-text-box {
+          padding: 0 97px 0 98px;
         }
       }
       .footer-content::before {
@@ -66,11 +77,13 @@
       }
       .footer-content {
         h1 {
-          padding: 92px 200px 0 200px;
+          padding: 91px 156px 0 156px;
           line-height: 44px;
+          font-size: 40px;
         }
         p {
-          padding: 32px 100px 0 100px;
+          padding: 32px 97px 0 98px;
+          font-size: 18px;
         }
         .footer-btn {
           padding-top: 40px;

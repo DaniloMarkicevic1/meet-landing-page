@@ -1,4 +1,4 @@
-sass --watch assets/styles/sass/styles.css assets/styles/css/css.css
+sass --watch assets/styles/sass/styles.scss assets/styles/css/css.css
 
 # Frontend Mentor - Meet landing page
 

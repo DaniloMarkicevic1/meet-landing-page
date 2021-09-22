@@ -28,11 +28,14 @@ body {
     }
     // Middle section
     .middle-content {
-      padding: 64px 24px 0 24px;
+      width:100%;
+      padding-top: 64px;
       .content-images {
+        // FIX!
         display: grid;
+        padding: 0 24px;
         column-gap: 24px;
-        row-gap: 15px;
+        row-gap: 24px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         .content-img1,
@@ -45,15 +48,18 @@ body {
           }
         }
       }
-      h2 {
-        padding-top: 64px;
+      .middle-text-box {
+        padding: 64px 24px 0 24px;
+        // FIX
+
+        h1 {
+          padding-top: 16px;
+        }
+        p {
+          padding: 32px 0 64px 0;
+        }
       }
-      h1 {
-        padding: 16px 161px 0 161px;
-      }
-      p {
-        padding: 32px 98px 80px 98px;
-      }
+
     }
 
     .footer-content::before {
@@ -68,7 +74,6 @@ body {
       z-index: -1;
     }
     .footer-content {
-      width:100%;
       background-repeat: no-repeat;
       background-size: 100% 100%;
       position: relative;

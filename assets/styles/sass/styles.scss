@@ -1,12 +1,15 @@
 @use "./fontStyles/fontsAndColors";
 @use "./components/components";
 @use "./breakpoints/tabletView";
+@use "./breakpoints/desktopView";
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
+  background-color: #f2f2f2;
   .container {
     width: 100%;
     display: flex;
@@ -19,7 +22,7 @@ body {
 }
 
 .circle {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   margin: 0 auto;
   width: 54px;
   height: 54px;
@@ -28,11 +31,15 @@ body {
   align-items: center;
   line-height: 54px;
   z-index: 2;
+  p {
+    font-weight: 900;
+  }
 }
 .circle-line {
   width: 1px;
   background-color: rgba(135, 135, 157, 0.25);
   height: 84px;
+
 }
 .footer-circle {
   margin-bottom: -28px;
