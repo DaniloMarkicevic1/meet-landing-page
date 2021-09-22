@@ -31,7 +31,7 @@ body {
         color: #ffff;
       }
       p {
-        color: #ffff
+        color: #ffff;
       }
     }
     .footer-content,
@@ -46,14 +46,14 @@ body {
     .top-content {
       .button {
         .shadow {
-          color: v.$btnVText
+          color: v.$btnVText;
         }
       }
     }
-    .footer-content  {
+    .footer-content {
       .button {
         .shadow {
-          color: v.$btnVTextTwo
+          color: v.$btnVTextTwo;
         }
       }
     }
@@ -68,7 +68,6 @@ body {
         font-family: v.$textFont;
         font-weight: 900;
       }
-      
       .dl {
         background-color: v.$btnColorOne;
       }
