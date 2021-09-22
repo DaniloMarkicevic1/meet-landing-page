@@ -1,23 +1,47 @@
 @media screen and (min-width: 1440px) {
   body {
     .container {
+      .clr:hover {
+        background-color: #b18bdd;
+      }
+      .dl:hover {
+        background-color: #71c0d4;
+      }
+      button:hover {
+        cursor: url("../../images/PointerCopy7.png"), pointer;
+      }
       .header {
         .logo-img {
           padding-top: 80px;
         }
+        .avatars {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-top: 61px;
+          .grid-left,
+          .grid-right {
+            align-items: start;
+          }
+        }
       }
       .top-content {
+        width: auto;
+        padding-top: 47px;
         h1 {
           font-size: 64px;
           line-height: 64px;
-          padding-top: 61px;
+          padding: 0;
         }
         p {
           font-size: 18px;
+          padding: 0;
           padding-top: 34px;
+          padding-bottom: 32px;
         }
         .btns {
-          padding-bottom: 110px;
+          padding: 0;
+          padding-bottom: 117px;
         }
       }
       .middle-content {
@@ -56,23 +80,23 @@
           text-align: left;
         }
         h1 {
-            width: 100%;
-            padding:0;
-            padding-right: 125px;
+          width: 100%;
+          padding: 0;
+          padding-right: 125px;
         }
-        p{
-            width: 100%;
-            padding:0;
-            // padding-left: 125px;
-            // padding-right: 92px;
+        p {
+          width: 100%;
+          padding: 0;
+          // padding-left: 125px;
+          // padding-right: 92px;
         }
         .footer-btn {
-            padding: 0;
-            width: 100%;
-            padding-left:92px;
-            text-align: left;
-            margin: auto 0;
-            word-break: break-word;
+          padding: 0;
+          width: 100%;
+          padding-left: 92px;
+          text-align: left;
+          margin: auto 0;
+          word-break: break-word;
         }
       }
     }

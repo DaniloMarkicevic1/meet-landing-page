@@ -43,6 +43,20 @@ body {
       }
     }
     // Button Styles
+    .top-content {
+      .button {
+        .shadow {
+          color: v.$btnVText
+        }
+      }
+    }
+    .footer-content  {
+      .button {
+        .shadow {
+          color: v.$btnVTextTwo
+        }
+      }
+    }
     .top-content,
     .footer-content {
       .button {
@@ -54,10 +68,10 @@ body {
         font-family: v.$textFont;
         font-weight: 900;
         .shadow {
-          color: v.$btnVText;
           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
       }
+      
       .dl {
         background-color: v.$btnColorOne;
       }

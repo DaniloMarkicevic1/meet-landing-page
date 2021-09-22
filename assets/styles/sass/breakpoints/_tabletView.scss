@@ -8,6 +8,24 @@
         }
         .avatars {
           padding-top: 64px;
+          column-gap: 32px;
+          img {
+            max-width: 110px;
+            max-height: 110px;
+            border-radius: 50%;
+          }
+          .grid-right {
+            justify-content: start;
+          }
+          .grid-left,
+          .grid-right {
+            column-gap: 32px;
+            .left-items,
+            .middle-items,
+            .right-items {
+              row-gap: 28px;
+            }
+          }
         }
       }
       // Top section
