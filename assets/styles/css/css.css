@@ -341,7 +341,7 @@ body .container .header .avatars .grid-right {
   }
   body .container .top-content {
     width: auto;
-    padding-top: 47px;
+    padding: 47px 56px 0;
   }
   body .container .top-content h1 {
     font-size: 64px;
