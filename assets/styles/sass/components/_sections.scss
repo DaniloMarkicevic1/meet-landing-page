@@ -31,7 +31,6 @@ body {
       width: 100%;
       padding-top: 64px;
       .content-images {
-        // FIX!
         display: grid;
         padding: 0 24px;
         column-gap: 24px;
@@ -50,8 +49,6 @@ body {
       }
       .middle-text-box {
         padding: 64px 24px 0 24px;
-        // FIX
-
         h1 {
           padding-top: 16px;
         }
