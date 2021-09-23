@@ -37,30 +37,32 @@ body .container .middle-content h1 {
   font-size: 32px;
   line-height: 36px;
 }
-body .container .top-content .button .shadow {
-  color: #8fe3f9;
-}
 body .container .top-content .button,
 body .container .footer-content .button {
-  padding: 20px 45px;
+  padding: 16px 40px;
   border-radius: 29px;
+  line-height: 26px;
   color: #ffffff;
   border: none;
   font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
 }
-body .container .top-content .button .shadow,
-body .container .footer-content .button .shadow {
-  color: #d9b8ff;
-}
 body .container .top-content .dl,
 body .container .footer-content .dl {
   background-color: #4d96a9;
 }
+body .container .top-content .dl .shadow,
+body .container .footer-content .dl .shadow {
+  color: #8fe3f9;
+}
 body .container .top-content .clr,
 body .container .footer-content .clr {
   background-color: #855fb1;
+}
+body .container .top-content .clr .shadow,
+body .container .footer-content .clr .shadow {
+  color: #d9b8ff;
 }
 
 @media screen and (min-width: 744px) {
@@ -177,6 +179,9 @@ body .container .top-content .btn-padding {
   padding-top: 16px;
   padding-bottom: 64px;
 }
+body .container .top-content .btn-padding button {
+  padding: 16px 29px;
+}
 body .container .middle-content {
   width: 100%;
   padding-top: 64px;
@@ -184,23 +189,27 @@ body .container .middle-content {
 body .container .middle-content .content-images {
   display: grid;
   padding: 0 24px;
-  column-gap: 24px;
+  column-gap: 25px;
   row-gap: 24px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
 }
 body .container .middle-content .content-images .content-img1 img,
 body .container .middle-content .content-images .content-img2 img,
 body .container .middle-content .content-images .content-img3 img,
 body .container .middle-content .content-images .content-img4 img {
   width: 100%;
+  height: 100%;
   border-radius: 8px;
 }
 body .container .middle-content .middle-text-box {
   padding: 64px 24px 0 24px;
 }
+body .container .middle-content .middle-text-box h2 {
+  padding-left: 26px;
+  padding-right: 26px;
+}
 body .container .middle-content .middle-text-box h1 {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 body .container .middle-content .middle-text-box p {
   padding: 32px 0 64px 0;
@@ -222,7 +231,7 @@ body .container .footer-content {
   position: relative;
 }
 body .container .footer-content h1 {
-  padding-top: 92px;
+  padding: 92px 24px 0;
 }
 body .container .footer-content p {
   padding: 24px 24px 0 24px;
@@ -267,7 +276,7 @@ body .container .header .avatars .grid-right .right-items {
     line-height: 48px;
   }
   body .container .top-content p {
-    padding: 24px 20% 0 20%;
+    padding: 24px 156px 0 155px;
   }
   body .container .top-content .btns {
     display: inline-flex;
@@ -298,27 +307,27 @@ body .container .middle-content .content-images .content-img4 img {
     min-height: 100%;
     border-radius: 8px;
   }
-  body .container .middle-content h2 {
+  body .container .middle-content .middle-text-box {
+    padding: 0 97px 0 98px;
+  }
+  body .container .middle-content .middle-text-box h2 {
     padding: 48px 149px 0 149px;
   }
-  body .container .middle-content h1 {
+  body .container .middle-content .middle-text-box h1 {
     padding: 16px 65px 0 63px;
     font-size: 40px;
     line-height: 44px;
   }
-  body .container .middle-content p {
+  body .container .middle-content .middle-text-box p {
     padding: 0;
     padding-top: 32px;
     padding-bottom: 80px;
-  }
-  body .container .middle-content .middle-text-box {
-    padding: 0 97px 0 98px;
   }
   body .container .footer-content::before {
     background-size: cover;
   }
   body .container .footer-content h1 {
-    padding: 91px 156px 0 156px;
+    padding: 92px 155px 0 156px;
     line-height: 44px;
     font-size: 40px;
   }
@@ -327,8 +336,7 @@ body .container .middle-content .content-images .content-img4 img {
     font-size: 18px;
   }
   body .container .footer-content .footer-btn {
-    padding-top: 40px;
-    padding-bottom: 66px;
+    padding: 40px 287px 66px 288px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -338,7 +346,7 @@ body .container .middle-content .content-images .content-img4 img {
   body .container .header .avatars {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 61px;
   }
   body .container .header .avatars .grid-left,
@@ -346,7 +354,8 @@ body .container .header .avatars .grid-right {
     align-items: start;
   }
   body .container .top-content {
-    width: auto;
+    width: 100%;
+    max-width: 540px;
     padding: 47px 56px 0;
   }
   body .container .top-content h1 {
@@ -400,11 +409,13 @@ body .container .header .avatars .grid-right {
   }
   body .container .footer-content h1 {
     width: 100%;
+    min-width: 350px;
     padding: 0;
     padding-right: 125px;
   }
   body .container .footer-content p {
     width: 100%;
+    min-width: 350px;
     padding: 0;
   }
   body .container .footer-content .footer-btn {
@@ -432,11 +443,10 @@ body .container {
 .circle {
   background-color: #fafafa;
   margin: 0 auto;
-  width: 54px;
-  height: 54px;
+  width: 56px;
+  height: 56px;
   border: 1px solid rgba(135, 135, 157, 0.25);
   border-radius: 50%;
-  align-items: center;
   line-height: 54px;
   z-index: 2;
 }

@@ -35,7 +35,7 @@
           line-height: 48px;
         }
         p {
-          padding: 24px 20% 0 20%;
+          padding: 24px 156px 0 155px;
         }
         .btns {
           display: inline-flex;
@@ -69,21 +69,21 @@
             }
           }
         }
-        h2 {
-          padding: 48px 149px 0 149px;
-        }
-        h1 {
-          padding: 16px 65px 0 63px;
-          font-size: 40px;
-          line-height: 44px;
-        }
-        p {
-          padding: 0;
-          padding-top: 32px;
-          padding-bottom: 80px;
-        }
         .middle-text-box {
           padding: 0 97px 0 98px;
+          h2 {
+            padding: 48px 149px 0 149px;
+          }
+          h1 {
+            padding: 16px 65px 0 63px;
+            font-size: 40px;
+            line-height: 44px;
+          }
+          p {
+            padding: 0;
+            padding-top: 32px;
+            padding-bottom: 80px;
+          }
         }
       }
       .footer-content::before {
@@ -91,7 +91,7 @@
       }
       .footer-content {
         h1 {
-          padding: 91px 156px 0 156px;
+          padding: 92px 155px 0 156px;
           line-height: 44px;
           font-size: 40px;
         }
@@ -100,8 +100,7 @@
           font-size: 18px;
         }
         .footer-btn {
-          padding-top: 40px;
-          padding-bottom: 66px;
+          padding: 40px 287px 66px 288px;
         }
       }
     }
