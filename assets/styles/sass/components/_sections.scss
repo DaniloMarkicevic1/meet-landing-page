@@ -1,0 +1,96 @@
+body {
+  .container {
+    .header {
+      .logo-img {
+        padding-top: 48px;
+      }
+      .avatars {
+        padding-top: 54px;
+      }
+    }
+    // Top section
+    .top-content {
+      width: 100%;
+      padding-top: 48px;
+      h1 {
+        padding: 0 24px;
+      }
+      p {
+        padding: 24px 24px 0 24px;
+      }
+      .btn-padding-one {
+        padding-top: 32px;
+      }
+      .btn-padding {
+        padding-top: 16px;
+        padding-bottom: 64px;
+        button {
+          padding: 16px 29px;
+        }
+      }
+    }
+    // Middle section
+    .middle-content {
+      width: 100%;
+      padding-top: 64px;
+      .content-images {
+        display: grid;
+        padding: 0 24px;
+        column-gap: 25px;
+        row-gap: 24px;
+        grid-template-columns: 1fr 1fr;
+        line-height: 0;
+        .content-img1,
+        .content-img2,
+        .content-img3,
+        .content-img4 {
+          img {
+            width: 100%;
+            border-radius: 8px;
+          }
+        }
+      }
+      .middle-text-box {
+        padding: 64px 24px 0 24px;
+        h2 {
+          padding-left: 26px;
+          padding-right: 26px;
+        }
+        h1 {
+          padding-top: 24px;
+        }
+        p {
+          padding: 32px 0 64px 0;
+        }
+      }
+    }
+
+    .footer-content::before {
+      content: "";
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      z-index: -1;
+    }
+    .footer-content {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+
+      h1 {
+        padding: 92px 24px 0;
+      }
+      p {
+        padding: 24px 24px 0 24px;
+      }
+      .footer-btn {
+        padding-top: 32px;
+        padding-bottom: 72px;
+      }
+    }
+  }
+}

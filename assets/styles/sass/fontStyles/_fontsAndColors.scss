@@ -1,0 +1,99 @@
+@use "../variables" as v;
+
+body {
+  background-color: v.$backgroundColor;
+  .container {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    font-family: v.$textFont;
+    color: v.$textColor;
+    .top-content {
+      h1 {
+        color: v.$titleColor;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 44px;
+      }
+    }
+    .middle-content {
+      h2 {
+        color: v.$btnColorOne;
+        font-weight: 900;
+        font-size: 16px;
+        letter-spacing: 4px;
+      }
+      h1 {
+        color: v.$titleColor;
+      }
+    }
+    .footer-content {
+      color: v.$secondWhite;
+      background-color: v.$footerBackground;
+    }
+    .footer-content::before {
+      background-image: v.$footerMobileImage;
+    }
+    .footer-content,
+    .middle-content {
+      h1 {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+      }
+    }
+    .top-content,
+    .footer-content {
+      .button {
+        padding: 16px 40px;
+        border-radius: 29px;
+        line-height: 26px;
+        color: v.$white;
+        border: none;
+        font-size: 16px;
+        font-family: v.$textFont;
+        font-weight: 900;
+      }
+      .dl {
+        background-color: v.$btnColorOne;
+        .shadow {
+          color: v.$btnVText;
+        }
+      }
+      .clr {
+        background-color: v.$btnColorTwo;
+        .shadow {
+          color: v.$btnVTextTwo;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 744px) {
+  body {
+    .container {
+      .footer-content::before {
+        background-image: v.$footerTabletImage;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    .container {
+      .clr:hover {
+        background-color: v.$hoverTwo;
+      }
+      .dl:hover {
+        background-color: v.$hoverOne;
+      }
+      button:hover {
+        cursor: v.$cursor;
+      }
+      .footer-content::before {
+        background-image: v.$footerDesktopImage;
+      }
+    }
+  }
+}
