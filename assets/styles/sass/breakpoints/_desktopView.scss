@@ -7,7 +7,6 @@
         }
         .avatars {
           display: flex;
-          flex-direction: row;
           justify-content: center;
           padding-top: 61px;
           .grid-left,
@@ -17,7 +16,6 @@
         }
       }
       .top-content {
-        width: 100%;
         max-width: 540px;
         padding: 47px 56px 0;
         h1 {
