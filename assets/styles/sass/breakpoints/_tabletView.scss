@@ -54,20 +54,8 @@
         padding-top: 67px;
         .content-images {
           display: flex;
-          flex-direction: row;
           padding: 0 40px;
           column-gap: 11px;
-          .content-img1,
-          .content-img2,
-          .content-img3,
-          .content-img4 {
-            img {
-              object-fit: cover;
-              width: 100%;
-              min-height: 100%;
-              border-radius: 8px;
-            }
-          }
         }
         .middle-text-box {
           padding: 0 97px 0 98px;
