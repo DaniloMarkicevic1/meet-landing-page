@@ -1,15 +1,6 @@
 @media screen and (min-width: 1440px) {
   body {
     .container {
-      .clr:hover {
-        background-color: #b18bdd;
-      }
-      .dl:hover {
-        background-color: #71c0d4;
-      }
-      button:hover {
-        cursor: url("../../images/PointerCopy7.png"), pointer;
-      }
       .header {
         .logo-img {
           padding-top: 80px;
@@ -66,7 +57,6 @@
         }
       }
       .footer-content::before {
-        background-image: url("../../images/desktop/image-footer.jpg");
         background-size: cover;
       }
       .footer-content {
@@ -93,7 +83,6 @@
           padding-left: 92px;
           text-align: left;
           margin: auto 0;
-          word-break: break-word;
         }
       }
     }

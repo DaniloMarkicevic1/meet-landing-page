@@ -60,7 +60,6 @@ body {
 
     .footer-content::before {
       content: "";
-      background-image: url("../../images/mobile/image-footer.jpg");
       background-size: cover;
       position: absolute;
       top: 0px;
@@ -70,11 +69,11 @@ body {
       z-index: -1;
     }
     .footer-content {
-      width:100%;
+      width: 100%;
       background-repeat: no-repeat;
       background-size: 100% 100%;
       position: relative;
-      background-color: rgba(77, 150, 169, 0.86);
+
       h1 {
         padding-top: 92px;
       }

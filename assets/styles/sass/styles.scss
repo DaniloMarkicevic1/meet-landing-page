@@ -1,3 +1,4 @@
+@use "./variables" as v;
 @use "./fontStyles/fontsAndColors";
 @use "./components/components";
 @use "./breakpoints/tabletView";
@@ -9,7 +10,6 @@
 }
 
 body {
-  background-color: #f2f2f2;
   .container {
     width: 100%;
     display: flex;
@@ -17,16 +17,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
   }
 }
 
 .circle {
-  background-color: #fafafa;
+  background-color: v.$secondWhite;
   margin: 0 auto;
   width: 54px;
   height: 54px;
-  border: 1px solid rgba(135, 135, 157, 0.25);
+  border: 1px solid v.$circle;
   border-radius: 50%;
   align-items: center;
   line-height: 54px;
@@ -37,7 +36,7 @@ body {
 }
 .circle-line {
   width: 1px;
-  background-color: rgba(135, 135, 157, 0.25);
+  background-color: v.$circle;
   height: 84px;
 }
 .footer-circle {

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+body {
+  background-color: #f2f2f2;
+}
 body .container {
   font-size: 16px;
   font-weight: 500;
@@ -21,11 +24,12 @@ body .container .middle-content h2 {
 body .container .middle-content h1 {
   color: #28283d;
 }
-body .container .footer-content h1 {
-  color: #ffff;
+body .container .footer-content {
+  color: #fafafa;
+  background-color: rgba(77, 150, 169, 0.86);
 }
-body .container .footer-content p {
-  color: #ffff;
+body .container .footer-content::before {
+  background-image: url("../../images/mobile/image-footer.jpg");
 }
 body .container .footer-content h1,
 body .container .middle-content h1 {
@@ -36,18 +40,19 @@ body .container .middle-content h1 {
 body .container .top-content .button .shadow {
   color: #8fe3f9;
 }
-body .container .footer-content .button .shadow {
-  color: #d9b8ff;
-}
 body .container .top-content .button,
 body .container .footer-content .button {
   padding: 20px 45px;
-  color: #ffff;
   border-radius: 29px;
+  color: #ffffff;
   border: none;
   font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
+}
+body .container .top-content .button .shadow,
+body .container .footer-content .button .shadow {
+  color: #d9b8ff;
 }
 body .container .top-content .dl,
 body .container .footer-content .dl {
@@ -58,6 +63,25 @@ body .container .footer-content .clr {
   background-color: #855fb1;
 }
 
+@media screen and (min-width: 744px) {
+  body .container .footer-content::before {
+    background-image: url("../../images/tablet/image-footer.jpg");
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .container .clr:hover {
+    background-color: #b18bdd;
+  }
+  body .container .dl:hover {
+    background-color: #71c0d4;
+  }
+  body .container button:hover {
+    cursor: url("../../images/PointerCopy7.png"), pointer;
+  }
+  body .container .footer-content::before {
+    background-image: url("../../images/desktop/image-footer.jpg");
+  }
+}
 body .container {
   overflow-x: hidden;
 }
@@ -183,7 +207,6 @@ body .container .middle-content .middle-text-box p {
 }
 body .container .footer-content::before {
   content: "";
-  background-image: url("../../images/mobile/image-footer.jpg");
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -193,10 +216,10 @@ body .container .footer-content::before {
   z-index: -1;
 }
 body .container .footer-content {
+  width: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
-  background-color: rgba(77, 150, 169, 0.86);
 }
 body .container .footer-content h1 {
   padding-top: 92px;
@@ -210,9 +233,6 @@ body .container .footer-content .footer-btn {
 }
 
 @media screen and (min-width: 744px) {
-  body .container .header .logo-img {
-    padding-top: 48px;
-  }
   body .container .header .avatars {
     padding-top: 64px;
     column-gap: 32px;
@@ -295,7 +315,6 @@ body .container .middle-content .content-images .content-img4 img {
     padding: 0 97px 0 98px;
   }
   body .container .footer-content::before {
-    background-image: url("../../images/tablet/image-footer.jpg");
     background-size: cover;
   }
   body .container .footer-content h1 {
@@ -313,15 +332,6 @@ body .container .middle-content .content-images .content-img4 img {
   }
 }
 @media screen and (min-width: 1440px) {
-  body .container .clr:hover {
-    background-color: #b18bdd;
-  }
-  body .container .dl:hover {
-    background-color: #71c0d4;
-  }
-  body .container button:hover {
-    cursor: url("../../images/PointerCopy7.png"), pointer;
-  }
   body .container .header .logo-img {
     padding-top: 80px;
   }
@@ -376,7 +386,6 @@ body .container .header .avatars .grid-right {
     padding-bottom: 72px;
   }
   body .container .footer-content::before {
-    background-image: url("../../images/desktop/image-footer.jpg");
     background-size: cover;
   }
   body .container .footer-content {
@@ -404,7 +413,6 @@ body .container .header .avatars .grid-right {
     padding-left: 92px;
     text-align: left;
     margin: auto 0;
-    word-break: break-word;
   }
 }
 * {
@@ -412,9 +420,6 @@ body .container .header .avatars .grid-right {
   padding: 0;
 }
 
-body {
-  background-color: #f2f2f2;
-}
 body .container {
   width: 100%;
   display: flex;
@@ -422,7 +427,6 @@ body .container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .circle {

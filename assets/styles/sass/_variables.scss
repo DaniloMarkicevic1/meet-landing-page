@@ -5,8 +5,25 @@ $textFont: "Red Hat Display", sans-serif;
 $textColor: #87879d;
 $titleColor: #28283d;
 
-// button colors
+// custom cursor
+$cursor: url("../../images/PointerCopy7.png"), pointer;
+// footer
+$footerBackground: rgba(77, 150, 169, 0.86);
+$footerDesktopImage: url("../../images/desktop/image-footer.jpg");
+$footerTabletImage: url("../../images/tablet/image-footer.jpg");
+$footerMobileImage: url("../../images/mobile/image-footer.jpg");
+
+// button colorsurl
 $btnColorOne: #4d96a9;
 $btnColorTwo: #855fb1;
 $btnVText: #8fe3f9;
 $btnVTextTwo: #d9b8ff;
+$backgroundColor: #f2f2f2;
+$white: #ffffff;
+$secondWhite: #fafafa;
+$hoverOne: #71c0d4;
+$hoverTwo: #b18bdd;
+
+// Number Circle
+
+$circle: rgba(135, 135, 157, 0.25);
