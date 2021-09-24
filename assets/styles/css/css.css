@@ -349,7 +349,7 @@ body .container .header .avatars .grid-right {
   body .container .top-content h1 {
     font-size: 64px;
     line-height: 64px;
-    padding: 0;
+    padding: 0 64px;
   }
   body .container .top-content p {
     font-size: 18px;
@@ -431,8 +431,8 @@ body .container {
 .circle {
   background-color: #fafafa;
   margin: 0 auto;
-  width: 56px;
-  height: 56px;
+  width: 54px;
+  height: 54px;
   border: 1px solid rgba(135, 135, 157, 0.25);
   border-radius: 50%;
   line-height: 54px;
